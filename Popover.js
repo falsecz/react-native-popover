@@ -42,8 +42,8 @@ var Popover = React.createClass({
   getInitialState() {
     return {
       contentSize: {},
-      anchorPoint: {},
-      popoverOrigin: {},
+      anchorPoint: {x: 0, y: 0},
+      popoverOrigin: {x: 0, y: 0},
       placement: 'auto',
       isTransitioning: false,
       defaultAnimatedValues: {
